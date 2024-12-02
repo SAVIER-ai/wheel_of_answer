@@ -25,6 +25,17 @@ h1 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
+.glowing-text {
+    font-size: 1rem;
+    margin-bottom: 10px;           /* Set the font size */
+    color: white;             /* Set the text color */
+    text-shadow: 
+        0 0 5px rgba(0, 255, 0, 0.5),    /* Green glow with soft blur */
+        0 0 10px rgba(0, 255, 0, 0.8),   /* Stronger green glow */
+        0 0 15px rgba(0, 255, 0, 1),     /* Even stronger green glow */
+        0 0 20px rgba(0, 255, 0, 1);     /* Intense green glow */
+    text-decoration: underline;    
+}
 
 .input-section label {
     display: block;
