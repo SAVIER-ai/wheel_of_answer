@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Answers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Wheel of Answers</h1>
+        <div class="input-section">
+            <label for="question">Question:</label>
+            <input type="text" id="question" placeholder="Enter your question">
+            <label for="answers">Answers (comma-separated):</label>
+            <input type="text" id="answers" placeholder="Enter answers separated by commas">
+            <button id="generate-wheel">Generate Wheel</button>
+        </div>
+        <div class="wheel-container">
+            <canvas id="wheel"></canvas>
+            <div class="arrow"></div>
+        </div>
+        <button id="spin-wheel" disabled>Spin</button>
+        <div id="selected-answer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
