@@ -6,11 +6,14 @@
     <title>Wheel of Answers</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link rel="manifest" href="manifest.json">
+    
 </head>
 <body>
     <div class="container">
         <h1>Wheel of Answers</h1>
+        <p class="glowing-text">made by SAI VERMA</p>
+ 
         <div class="input-section">
             <label for="question">Question:</label>
             <input type="text" id="question" placeholder="Enter your question">
@@ -25,6 +28,23 @@
         <button id="spin-wheel" disabled>Spin</button>
         <div id="selected-answer"></div>
     </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p style="color: rgb(117, 245, 12);">Email: saiverma777@gmail.com</p>
+        <p style="color: rgb(117, 245, 12);">phone no. : +919855662312</p>
+    </section>
+    <footer>
+        <p style="color: rgb(255, 0, 13);">&copy; 2024 wheel of answer. all rights reserved</p>
+    </footer>
     <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('sw.js').then(() => {
+            console.log('Service Worker Registered');
+          });
+        }
+      </script>
+      
 </body>
 </html>
